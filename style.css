@@ -1,0 +1,529 @@
+/*get idea and reference from 
+https://www.weblimitless.com/stop-website-showing-white-space-right-side/ to 
+get rid of white space on the right*/
+html{
+    width:100%;
+    padding: 0px;
+    margin: 0px;
+    height:100vh;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #f2f2f2;
+    width:100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+     display: flex;
+     flex-direction: row;
+     font-family: 'Montserrat',Helvetica,sans-serif;
+     width: 100%;
+}
+
+main{
+     display: flex;
+     flex-direction: column;
+     font-family: 'Open Sans', sans-serif;
+     width: 100%;
+     align-items: center; 
+     height: 100%;
+
+}
+
+.information{
+    display: flex;
+    flex-direction: row;
+}
+
+.new
+{
+    color: #778093;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px; 
+    white-space: nowrap; 
+    flex-basis: 180%;
+}
+
+.new span{
+    color:#c9523d;
+}
+
+.home{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    margin-right:8px;
+    color: #000000;
+}
+
+.visit{ 
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #000000;
+    margin-right: 8px;
+} 
+
+.about{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #000000;
+    margin-right: 20px;
+}
+
+
+
+.numberBar
+{
+    color: #f2f2f2;
+    font-size: 80px;
+    background-color: #000000;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding-bottom: 30px; 
+    padding-top: 60px;
+}
+
+.new1
+{
+    color: #000000;
+    text-align: center; 
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-size: 26px;
+    font-weight: bold;
+    width:100%;
+    height:100%;
+}
+
+.new2
+{
+    color: #000000;
+    text-align: center; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20%;
+    margin-right: 20%; 
+    height:100%;
+}
+
+/*get idea and reference from "meme generator"*/
+
+img{
+    
+    width: 100%;
+}
+
+.text{
+    color: #f2f2f2;
+    font-size: 8px;
+    margin: 0;
+    position: absolute; 
+    text-align: center; 
+    left : 9%;
+    right: 10%;
+    bottom : 10px;
+}
+
+.text span{
+    font-size: 6px;
+}
+
+/* slide part get idea and reference 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
+
+.slide{
+    width: 100%;
+    max-width: 550px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    
+.left{
+    color: #f2f2f2;
+    position: absolute;
+    font-size: 13px;
+    left: 0.43%;
+    top: 43%;
+    padding: 3.3%;
+    cursor: pointer;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.right{
+    color: #f2f2f2;
+    position: absolute;
+    font-size: 13px;
+    right: 0.40%;
+    top: 43%;
+    padding: 3.3%;
+    cursor: pointer;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.left:hover{
+    background-color: #000000;
+}
+
+.right:hover{
+    background-color: #000000;
+}
+
+.number{
+    color:#f2f2f2;
+    font-size: 13px;
+    position: absolute;
+    left: 7px;
+    top: 5%;
+} 
+
+.showDot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.dot{
+    height: 13px;
+    width: 13px;
+    background-color: rgb(194, 192, 192);
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px; 
+    cursor: pointer;
+  }
+
+.dot:hover{
+      background-color: rgb(151, 150, 150);
+  }
+
+/* get idea and reference by TA Nima and
+https://codepen.io/taniarascia/pen/jBvKVL */
+
+.fadingEffect{
+    animation: fade;
+    animation-duration: 0.6s;
+    animation-direction: alternate;
+}
+
+@keyframes fade{
+    0%   {opacity : 0.6;}
+    25%  {opacity : 0.7;}
+    50%  {opacity : 0.8;}
+    75%  {opacity : 0.9}
+    100% {opacity: 1;}
+}
+
+.paragrph{
+    margin-left:26%;
+    margin-right:26%;
+    font-size: 14px;
+    color: #000000;
+}
+
+.paragrph1{
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-size: 14px;
+    color: #000000;
+} 
+
+footer{
+    background-color: #c6d2da;
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat",Helvetica,sans-serif;
+    color: #000000;
+    font-style: normal; 
+    width:100%;
+    justify-content: space-around; 
+    height: 100%;
+}
+
+.address{
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+@media(max-width: 1200px)
+{
+    .paragrph{
+        margin-left: 23%;
+        margin-right: 23%;
+    }
+
+    .paragrph1{
+        margin-top: 16px;
+        margin-bottom: 20px;
+        margin-left: 23%;
+        margin-right: 23%;
+    }
+
+    .new1{
+        width: 75%;
+    }
+}
+
+
+
+@media(max-width: 1024px)
+{
+    .address{
+       margin-left: 18px;
+       margin-right: 23px;
+    }
+   
+    .new1{
+        font-size: 28px;
+        width: 60%;
+    }
+
+    .new2{
+        font-size: 20px;
+    }
+
+    .paragrph{
+        font-size: 19px;
+    }
+
+    .paragrph1{
+        font-size: 19px;
+    }
+
+    .slide{
+        max-width: 630px;
+    }
+
+
+    
+}
+
+@media(max-width: 780px)
+{
+    .paragrph{
+        font-size: 14px;
+    }
+
+    .paragrph1{
+        font-size: 14px;
+    }
+
+    .new1{
+        font-size: 26px;
+    }
+
+
+    .slide{
+        max-width: 550px;
+    }
+
+    .new2{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:480px)
+{
+    footer{
+        flex-direction: column-reverse;
+        height:auto;
+    }
+
+    header{
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .information{
+        justify-content: center;
+    }
+
+    .new{
+        margin-left: 0%;
+        margin-right: 0%;
+        white-space: normal;
+        text-align: center; 
+    } 
+
+    .new1{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .slide{
+        font-size: 0px; 
+        padding-bottom: 10%;
+        background-color: #000000;
+    }
+
+    .text{
+        left: 9%;
+        bottom: 2%;
+    }
+
+    .numberBar{
+        font-size: 80px;
+        height: 100px;
+    } 
+
+    .address{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .hour{
+        margin-left: 10px;
+    }
+
+    .date{
+        margin-left: 10px;
+    }
+
+    .paragrph{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .paragrph1{
+        margin-top: 16px;
+        margin-bottom: 20px;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .home{
+        margin-right: 60px;
+    }
+
+    .visit{
+        margin-right: 60px;
+    }
+
+}
+
+@media(max-width: 375px)
+{
+    .numberBar{
+        font-size: 60px;
+    }
+
+    .number{
+        font-size: 3px;
+    }
+}
+
+@media(max-width: 240px)
+{
+    .numberBar{
+        font-size: 40px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .information{
+        font-size: 10px;
+    }
+
+    .home{
+        font-size: 10px;
+        margin-left: 20px;
+    }
+
+    .text{
+        font-size: 3px;
+    }
+
+    .footer{
+       height: 0%;
+    }
+}
+
+.address h3
+{   
+   font-weight: 900;
+   font-size: 14px;
+   margin-top: 30px;
+   margin-bottom: 15px ;
+
+}
+
+.address p
+{
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+
+.hour h3{
+    font-weight: 900;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.hour ul{
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.T{
+    margin-bottom: 6px;
+}
+
+.R{
+    margin-bottom: 6px;
+}
+
+.S{
+    margin-bottom: 6px;
+}
+
+.M{
+    margin-bottom: 6px;
+}
+
+.hour{
+
+    margin-right: 8px;
+
+}
+
+.date{
+   margin-right: 20px;
+   right: 30px;
+
+}
+
+.date h3{
+   font-weight: 900;
+   font-size: 14px;
+   margin-top: 30px;
+   margin-bottom: 15px;
+}
+
+.date p{
+    font-weight: lighter;
+    font-size: 12px;
+}
